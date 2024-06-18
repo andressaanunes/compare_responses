@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload de Arquivo</title>
+</head>
+<body>
+  <h2>Upload de arquivo</h2>
+  <form action="http://127.0.0.1:8000/upload" method="post" enctype="multipart/form-data">
+      <label for="file1">Selecione o primeiro arquivo que você deseja processar:</label>
+      <input type="file" id="file1" name="file1" accept=".csv, .xlsx" required>
+      <br />
+      <label for="file2">Selecione o segundo arquivo que você deseja processar:</label>
+      <input type="file" id="file2" name="file2" accept=".csv, .xlsx" required>
+      <br />
+      <input type="submit" value="Upload">
+  </form>
+</body>
+</html>
